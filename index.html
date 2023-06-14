@@ -7,65 +7,80 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <button class="contact">contact</button>
-    <div class="section" id="section1">
-       <div class="sec1links">
-         <h1>Frontend end software <br> developer</h1>
-        <p>I like building user interface with useful <br> interactions and developing web <br> applications.</p>
-        <a href="">About me</a></div>
-   
-            <img class="scherm" src="assets/scherm.png" alt="">
+    <div class="container">
         
-    </div>
-
-    <div class="section" id="section2">
-        <div class="textcontent">     <p>
-            <Span style="font-size: 64px; font-weight: bold;"> Hi there!</Span> <br>
-             <span  style="font-size: 84px; font-weight: bold;">I’m Niek</span> <br>
-             first year student with a passion for web development
-         </p>
-         <p>
-             Im a first year student at the Hanze hogeschool in Groningen persuing communication & multimedia design. <br>
-             Im a problem solver with a high attention to detail. <br> <br>
- 
-             Im a big fan of coding but also of motorsport, boxing and weightlifting
-         </p></div>
-   
-    </div>
-
-    <div class="section" id="section3">
-        <h1>Skills</h1>
-        <img src="assets/skills.png" alt="">
-    </div>
-
-    <div class="section" id="section4">
-
-        <h1>Projects</h1>
-        <p>I have built a couple complex projects in my <br> free time to show of my work and skill. </p>
-        <a >See github</a>
-    </div>
-    <div class="section" id="project1">
-        <div id="tictactoetext">  <h1>TicTacToe <br> Ai</h1>
-            <p>Built with html, css and javascript. using the <br> minimax algorithm to have the computer predict <br> the next moves. there are multiple levels of <br> diffuculty.  </p>
-            <a href="">View project</a> <br> <br>
-            <a style="color: orange;" href="">View code</a>
-        </div>
-        <img id="tictactoe" src="assets/tictactoe.png" alt="">
-    </div>
-
-    <div class="section" id="project1">
-        <img id="chadgpt" src="assets/chadgpt.png" alt="">
-        <div id="chadgpttext">  <h1>ChadGPT</h1>
-            <p>Built with the OpenAI api but manipulated with <br> prompts to get rid of the censorship and ethical <br> ways of thinking. ChadGPT has no morals. <br> 
-            Disclaimer: responses can be offensive. </p>
-            <a href="">View project</a> <br> <br>
-            <a style="color: orange;" href="">View code</a>
-        </div>
+        <button class="contact" onclick="scrollToSection('contactsection')"">contact</button>
+        <section class="section" id="section1">
+           <div class="sec1links">
+             <h1 style="font-size: 80px;">Front-end software <br> developer</h1> 
+            <p>I like building user interface with useful <br> interactions and developing web applications.</p> <br> <br>
+            <a style="font-weight: bold; font-size: 35px; " onclick="scrollToSection('section2')">About me</a></div>
        
-    </div>
-
-    <div class="section">
-
+                <img class="scherm" src="assets/scherm.png" alt="">
+        </section>
+        <img id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('section2')">
+        <section class="section" id="section2">
+            <div class="textcontent">     <p>
+                <Span style="font-size: 64px; font-weight: bold;"> Hi there!</Span> <br>
+                 <span  style="font-size: 84px; font-weight: bold;">I’m Niek</span> <br> <br>
+                 first year student with a passion for web development
+             </p>
+             <p id="textabout"> 
+                <span style="font-size: larger;">About me</span> <br> <br>
+                 Im a first year student at the Hanze hogeschool in Groningen persuing communication & multimedia design. <br>
+                 Im a problem solver with a high attention to detail. <br> <br>
+     
+                 Im a big fan of coding but also of motorsport, boxing and weightlifting <br>
+             </p></div>
+    
+       
+        </section>
+        <img id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('section3')">
+        <section class="section" id="section3">
+            <h1>Skills</h1> 
+            <img src="assets/skills.png" alt="">
+            
+        </section>
+        <img style="top: -30%;" id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('section4')">
+        <section class="section" id="section4">
+    
+            <h1>Projects</h1> 
+            <p>I have built a couple complex projects in my <br> free time to show of my work and skill. </p> 
+            <a href="https://github.com/Niek1610">See github</a> 
+        </section>
+        <img style="top: -40%;" id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('project1')">
+        <section class="section" id="project1">
+            <div id="tictactoetext">  <h1>TicTacToe <br> Ai</h1>
+                <p>Built with html, css and javascript. using the <br> minimax algorithm to have the computer predict <br> the next moves. there are multiple levels of <br> diffuculty.  </p>
+                <a href="https://niek1610.github.io/TicTacToeAI/">View project</a> <br> <br>
+                <a style="color: orange;" href="https://github.com/Niek1610/TicTacToeAI">View code</a>
+            </div>
+            <img id="tictactoe" src="assets/tictactoe.png" alt="">
+        </section>
+        <img style="top: -40%;" id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('project2')">
+        <section class="section" id="project2">
+   
+            <img id="chadgpt" src="assets/chadgpt.png" alt="">
+            <div id="chadgpttext">  <h1>EvilGPT</h1>
+                <p>Built with the OpenAI api but manipulated with <br> prompts to get rid of the censorship and ethical <br> ways of thinking. ChadGPT has no morals. <br> 
+                Disclaimer: responses can be offensive. </p>
+                <a href="">View project</a> <br> <br>
+                <a style="color: orange;" href="">View code</a>
+            </div>
+           
+        </section>
+        <img style="top: -40%;" id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('contactsection')">
+        <section style="margin-bottom: 20%;" id="contactsection">
+          
+            <h1 style="text-align: center; ">Contact me</h1>
+            <form action="" class="contactForm"> 
+                <input id="name" type="text" placeholder="Name">
+                <input id="email" type="email" placeholder="Email">
+                <textarea id="message" name="message" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <input type="submit" id="submit" value="Send">
+            </form>
+        </section>
+        <img style="top: -70%; margin-left: -1.5%;  transform: rotate(180deg);" id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('section1')">
     </div>
     <script src="main.js"></script>
 </body>
