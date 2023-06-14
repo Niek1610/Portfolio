@@ -7,12 +7,21 @@
 
 #buttonscroll{
     position: relative;
-    top: -15%;
+    top: -20%;
     left: 50%;
     transform: translate(-50%);
     opacity: 50%;
     transition: all .3s ease-in-out;
     cursor: pointer;
+    display: none;
+}
+
+#monogram2{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 99;
+
 }
 
 #buttonscroll:hover{
@@ -43,10 +52,10 @@ a{
 body{
     height: auto;
     width: 100%;
-    max-width: 1680px;
     background-color: black;
     margin-left: auto;
     margin-right: auto;
+   
    
   
 }
@@ -74,9 +83,10 @@ section{
 }
 
 .scherm{
+    margin-top: 5%;
   position: relative;
   left: -10%;
-    width: 90%;
+    width: 80%;
     pointer-events: none;
 }
 
@@ -86,36 +96,35 @@ section{
 }
 
 #section1{
-   
    display: grid;
    grid-template-columns: 1fr 1fr;
    place-items: center;
    background-image: url(assets/background.png);
     background-size: 110%;
     background-position: center;
+    overflow: hidden;
 }
 
 .contact{
     position: fixed;
     right: 2%;
     top: 2%;
-    width: 150px;
-    height: 60px;
-    background-color: black;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(177, 0, 153);
     border-style: none;
-    border: 1px solid white;
     border-radius: 10px;
     cursor: pointer;
     transition: all .3s ease-in-out;
     font-size: large;
     font-weight: bold;
     z-index: 99;
+    opacity: 50%;
+    
 }
 
 .contact:hover{
-    background-color: white;
-    border-color: black;
-    color: black;
+    opacity: 90%;
 }
 
 #aboutme{
@@ -216,7 +225,8 @@ section{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
+
     gap: 25px;
     color: black;
     opacity: 90%;
@@ -232,7 +242,7 @@ border-radius: 20px;
 
 #message{
     color: black;
-    height: 150px;
+    height: 200px;
     border-radius: 20px;
 }
 

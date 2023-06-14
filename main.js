@@ -17,3 +17,5 @@ function scrollToSection(sectionId) {
 
 const section = document.querySelectorAll(".section")
 section.forEach((el) => observer.observe(el))
+
+
