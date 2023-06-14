@@ -1,0 +1,127 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 64px;
+}
+
+p{
+    font-size: 24px;
+    color: rgb(189, 189, 189);
+}
+
+a{
+    font-size: 26px;
+    color: rgb(189, 0, 196);
+    text-decoration: none;
+
+}
+
+body{
+    height: auto;
+    width: 100%;
+    max-width: 1680px;
+    background-color: black;
+    background-image: url(assets/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scherm{
+  position: relative;
+  left: -10%;
+    width: 90%;
+    pointer-events: none;
+}
+
+.sec1links{
+    position: relative;
+    right: -10%;
+}
+
+#section1{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-items: center;
+}
+
+.contact{
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    width: 150px;
+    height: 60px;
+    background-color: black;
+    border-style: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    font-size: large;
+    font-weight: bold;
+}
+
+.contact:hover{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+
+.textcontent{
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section{
+    height: 980px;
+    width: 100%;
+}
+
+#section3{
+    text-align: center;
+    padding-top: 20%;
+}
+
+#section4{
+    text-align: center;
+    padding-top: 15%;
+    
+}
+
+#project1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tictactoe{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tictactoetext{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chadgpt{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#chadgpttext{
+    margin-left: auto;
+    margin-right: auto;
+}
