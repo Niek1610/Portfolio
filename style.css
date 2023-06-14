@@ -10,13 +10,14 @@
     top: -15%;
     left: 50%;
     transform: translate(-50%);
-    opacity: 40%;
+    opacity: 80%;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
 
 #buttonscroll:hover{
     opacity: 100%;
+    
 }
 
 body::-webkit-scrollbar {
@@ -108,12 +109,22 @@ section{
     transition: all .3s ease-in-out;
     font-size: large;
     font-weight: bold;
+    z-index: 99;
 }
 
 .contact:hover{
     background-color: white;
     border-color: black;
     color: black;
+}
+
+#aboutme{
+    letter-spacing: 0px;
+    transition: all .3s ease-in-out;
+}
+
+#aboutme:hover{
+    letter-spacing: 5px;
 }
 
 
@@ -129,7 +140,18 @@ section{
 .section{
     height: 980px;
     width: 100%;
+    opacity: 0;
+    filter: blur(10px);
 
+    transition: .8s ease-in-out;
+}
+
+.sectionShow{
+    height: 980px;
+    width: 100%;
+    opacity: 1;
+    filter: blur(0);
+   
 }
 
 #section3{

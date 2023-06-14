@@ -7,16 +7,19 @@
     <title>Portfolio</title>
 </head>
 <body>
+
     <div class="container">
         
+   
         <button class="contact" onclick="scrollToSection('contactsection')"">contact</button>
+
         <section class="section" id="section1">
            <div class="sec1links">
-             <h1 style="font-size: 80px;">Front-end software <br> developer</h1> 
+             <h1 style="font-size: 80px; z-index: 99;">Front-end software <br> developer</h1> 
             <p>I like building user interface with useful <br> interactions and developing web applications.</p> <br> <br>
-            <a style="font-weight: bold; font-size: 35px; " onclick="scrollToSection('section2')">About me</a></div>
+            <a style="font-weight: bold; font-size: 35px; " onclick="scrollToSection('section2')" id="aboutme">About me</a></div>
        
-                <img class="scherm" src="assets/scherm.png" alt="">
+                <img style="z-index: -1;" class="scherm" src="assets/scherm.png" alt="">
         </section>
         <img id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('section2')">
         <section class="section" id="section2">
@@ -26,7 +29,7 @@
                  first year student with a passion for web development
              </p>
              <p id="textabout"> 
-                <span style="font-size: larger;">About me</span> <br> <br>
+                <span style="font-size: larger; color: #c0009c; font-weight: bold">About me</span> <br> <br>
                  Im a first year student at the Hanze hogeschool in Groningen persuing communication & multimedia design. <br>
                  Im a problem solver with a high attention to detail. <br> <br>
      
@@ -38,6 +41,10 @@
         <img id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('section3')">
         <section class="section" id="section3">
             <h1>Skills</h1> 
+            <p>HTML,CSS,JS, Building small projects with React.
+                <br> Building small server-side projects with Node.js basics. <br> <br>
+                
+            </p>
             <img src="assets/skills.png" alt="">
             
         </section>
@@ -46,14 +53,14 @@
     
             <h1>Projects</h1> 
             <p>I have built a couple complex projects in my <br> free time to show of my work and skill. </p> 
-            <a href="https://github.com/Niek1610">See github</a> 
+            <a href="https://github.com/Niek1610" id="aboutme">See github or scroll down</a> 
         </section>
         <img style="top: -40%;" id="buttonscroll" src="assets/buttonscroll.png" alt="" onclick="scrollToSection('project1')">
         <section class="section" id="project1">
             <div id="tictactoetext">  <h1>TicTacToe <br> Ai</h1>
                 <p>Built with html, css and javascript. using the <br> minimax algorithm to have the computer predict <br> the next moves. there are multiple levels of <br> diffuculty.  </p>
-                <a href="https://niek1610.github.io/TicTacToeAI/">View project</a> <br> <br>
-                <a style="color: orange;" href="https://github.com/Niek1610/TicTacToeAI">View code</a>
+                <a href="https://niek1610.github.io/TicTacToeAI/" id="aboutme">View project</a> <br> <br>
+                <a style="color: orange;" href="https://github.com/Niek1610/TicTacToeAI" id="aboutme">View code</a>
             </div>
             <img id="tictactoe" src="assets/tictactoe.png" alt="">
         </section>
@@ -62,10 +69,10 @@
    
             <img id="chadgpt" src="assets/chadgpt.png" alt="">
             <div id="chadgpttext">  <h1>EvilGPT</h1>
-                <p>Built with the OpenAI api but manipulated with <br> prompts to get rid of the censorship and ethical <br> ways of thinking. ChadGPT has no morals. <br> 
+                <p>Built with the OpenAI api but manipulated with <br> prompts to get rid of the censorship and ethical <br> ways of thinking. EvilGPT has no morals. <br> 
                 Disclaimer: responses can be offensive. </p>
-                <a href="">View project</a> <br> <br>
-                <a style="color: orange;" href="">View code</a>
+                <a href="https://niek1610.github.io/ChadGPT/" id="aboutme">View project</a> <br> <br>
+                <a style="color: orange;" href="https://github.com/Niek1610/ChadGPT" id="aboutme">View code</a>
             </div>
            
         </section>
