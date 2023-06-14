@@ -10,13 +10,13 @@
     top: -15%;
     left: 50%;
     transform: translate(-50%);
-    opacity: 80%;
+    opacity: 50%;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
 
 #buttonscroll:hover{
-    opacity: 100%;
+    opacity: 80%;
     
 }
 
@@ -261,5 +261,3 @@ border-radius: 20px;
     background-size: cover;
     background-position: center;
 }
-
-
